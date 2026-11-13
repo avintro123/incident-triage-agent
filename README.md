@@ -20,3 +20,4 @@ An autonomous, self-correcting Agentic RAG platform that ingests messy technical
 * **Keyword Matching:** Rank-BM25
 * **Backend:** FastAPI (Python 3.12)
 * **Package Management:** `uv`
+
