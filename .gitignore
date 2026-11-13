@@ -1,0 +1,44 @@
+# Python environment & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+env/
+venv/
+ENV/
+
+# Environment Variables & Secrets (NEVER push API keys)
+.env
+.env.local
+*.env
+
+# Vector store & local database storage
+qdrant_data/
+test_qdrant_data/
+
+# Logs & temp files
+*.log
+.pytest_cache/
+
+# Node / Frontend (for future Next.js)
+node_modules/
+.next/
+out/

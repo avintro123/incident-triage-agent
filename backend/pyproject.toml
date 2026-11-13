@@ -1,0 +1,27 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "avintro123", email = "babdhuthakur@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "google-genai>=3.3.0",
+    "langchain-google-genai>=4.5.0",
+    "pydantic>=2.14.3",
+    "pydantic-settings>=2.16.3",
+    "pypdf>=7.1.0",
+    "python-dotenv>=1.2.4",
+    "qdrant-client>=1.20.0",
+    "rank-bm25>=0.2.2",
+    "tiktoken>=0.14.0",
+]
+
+[project.scripts]
+backend = "backend:main"
+
+[build-system]
+requires = ["uv_build>=0.13.8,<0.14.0"]
+build-backend = "uv_build"
