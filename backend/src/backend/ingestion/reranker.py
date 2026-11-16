@@ -23,7 +23,7 @@ from backend.ingestion.models import DocumentChunk
 logger = logging.getLogger(__name__)
 
 
-class DocumentReranker:
+class   DocumentReranker:
     """
     The Precision Filter:
     Scores candidate cards directly against the user query, sorting them from
