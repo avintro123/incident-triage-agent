@@ -121,7 +121,7 @@ class HybridSearchStore:
         return [x / length for x in raw_vector]
 
     def index_cards(self, cards: List[DocumentChunk]) -> int:
-        """
+        """     
         Takes a list of DocumentChunk cards and indexes them in both:
         1. BM25 (words)
         2. Qdrant (vectors)
@@ -197,7 +197,7 @@ class HybridSearchStore:
         bm25_ranks: Dict[str, int] = {}
         if self.bm25_index:
             query_tokens = tokenize_for_keywords(query)
-            if query_tokens:
+            if query_tokens: 
                 scores = self.bm25_index.get_scores(query_tokens)
                 # Sort indices by score descending
                 sorted_indices = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)
