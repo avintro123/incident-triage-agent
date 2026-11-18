@@ -79,7 +79,7 @@ class QueryRouterNode:
 
         # 2. Update our Case File (State)
         state.sub_queries = plan.sub_queries
-        state.step_history.append(
+        state.step_history.append( 
             f"Router/Planner: Selected route '{plan.route}' with {len(plan.sub_queries)} sub-queries: {plan.sub_queries}"
         )
 
