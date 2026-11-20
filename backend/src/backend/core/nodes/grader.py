@@ -102,7 +102,7 @@ class RetrievalGraderNode:
                     f"Grader: REJECTED evidence (Attempt {state.search_retry_count}/{self.max_retries}). "
                     f"Rewrote query to: '{new_query}'"
                 )
-            else:
+            else: 
                 # Max retries reached: Stop looping to prevent an infinite loop, and proceed with best effort
                 state.grader_verdict = "pass"
                 state.step_history.append(
