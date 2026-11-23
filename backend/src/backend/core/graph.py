@@ -153,7 +153,7 @@ class IncidentTriageGraph:
                 prompt = (
                     f"Diagnose this production incident based ONLY on the documentation below.\n"
                     f"Incident: {state.incident_report}\n\n"
-                    f"Documentation:\n{docs_summary}\n\n"
+                    f"Documentation:\n{docs_summary}\n\n" 
                     f"Provide:\n1. Root Cause Analysis\n2. Exact CLI Remediation Steps"
                 )
                 response = llm.invoke(prompt)
